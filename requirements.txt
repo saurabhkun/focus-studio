@@ -1,0 +1,8 @@
+# UI & Backend
+pygame>=2.5.0
+matplotlib>=3.8.0
+plyer>=2.1.0
+
+# Image & GUI enhancements
+Pillow>=10.0.0
+customtkinter>=5.2.0
