@@ -5,14 +5,16 @@
 **Level up your productivity. Gamify your grind.**
 
 [![Python Version](https://img.shields.io/badge/python-3.11%2B-blue?logo=python&logoColor=white)](https://www.python.org/)
-[![UI Framework](https://img.shields.io/badge/Tkinter-Modern-orange?logo=python)](https://docs.python.org/3/library/tkinter.html)
+[![UI Framework](https://img.shields.io/badge/Tkinter-Custom_Themed-orange?logo=python)](https://docs.python.org/3/library/tkinter.html)
 [![Database](https://img.shields.io/badge/SQLite-Offline_First-003B57?logo=sqlite&logoColor=white)](https://www.sqlite.org/)
+[![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey?logo=windows)](https://github.com/)
 [![Status](https://img.shields.io/badge/Status-Active-success?logo=github)](https://github.com/)
 
-🔥 **STOP SCROLLING. START GRINDING.** 🔥  
-Focus Studio isn't just another boring Pomodoro timer-it’s a **high-octane, adrenaline-fueled Productivity RPG**. Transform your mundane study sessions into a relentless, interactive quest where **every second of your hyper-focus translates directly into raw XP, brutal leaderboard domination, and absolute academic supremacy!** If you're tired of losing to distractions, this is your ultimate weapon!
+> 🔥 **STOP SCROLLING. START GRINDING.** 🔥  
+> Focus Studio isn't just another boring Pomodoro timer - it's a **high-octane, adrenaline-fueled Productivity RPG**.  
+> Transform your study sessions into an interactive quest where **every second of hyper-focus earns raw XP, leaderboard domination, and academic supremacy!**
 
-[**Features**](#-key-features) • [**Installation**](#-installation--setup) • [**Architecture**](#-system-architecture--file-structure)
+[**📸 Screenshots**](#-app-showcase) • [**✨ Features**](#-key-features) • [**🛠️ Architecture**](#️-project-architecture) • [**🚀 Quick Start**](#-installation--setup) • [**🔮 Roadmap**](#-future-improvements-roadmap)
 
 </div>
 
@@ -20,23 +22,37 @@ Focus Studio isn't just another boring Pomodoro timer-it’s a **high-octane, ad
 
 ## 📸 App Showcase
 
-<!-- Update these with your actual image paths! For example: src="docs/timer.png" -->
+### ⏱️ Gamified Focus Timer - The Heart of the App
+
 <div align="center">
-  <img src="https://via.placeholder.com/800x450.png?text=Main+Dashboard+%26+Timer+Screenshot+Here" width="800" alt="Dashboard">
-  <br>
-  <i>Focus Studio - Level up your focus.</i>
+  <img src="assets/main_dashboard.png" width="800" alt="Gamified Timer Dashboard">
 </div>
+
+> Real-time countdown timer with animated XP rewards. Every completed session levels you up!
 
 ---
 
-## 📸 App Showcase
+### 📊 Deep Analytics - Track Your Progress
 
-<!-- Update these with your actual image paths! For example: src="docs/timer.png" -->
 <div align="center">
-  <img src="https://via.placeholder.com/800x450.png?text=Main+Dashboard+%26+Timer+Screenshot+Here" width="800" alt="Dashboard">
-  <br>
-  <i>Focus Studio - Level up your focus.</i>
+  <img src="assets/Analytics.png" width="800" alt="Analytics Dashboard">
 </div>
+
+> Visual bar graphs and charts show your daily and weekly focus hours — hold yourself accountable.
+
+---
+
+### 🗂️ More Features at a Glance
+
+|            📅 Tactical Mission Planner             |                🏆 Global Leaderboard                 |
+| :------------------------------------------------: | :--------------------------------------------------: |
+| <img src="assets/Mission_planner.png" width="380"> |    <img src="assets/leaderboard.png" width="380">    |
+|  Plan and schedule study blocks like a quest log   | Compete with friends based on total Focus Power & XP |
+
+|           🎵 Integrated Focus Jukebox           |                 👤 User Profile & XP                  |
+| :---------------------------------------------: | :---------------------------------------------------: |
+|    <img src="assets/music.png" width="380">     |      <img src="assets/profile.png" width="380">       |
+| Built-in MP3 player to maintain your Flow State | Track your level, badges, streaks, and lifetime stats |
 
 ---
 
@@ -44,106 +60,126 @@ Focus Studio isn't just another boring Pomodoro timer-it’s a **high-octane, ad
 
 Transform the way you work and study with our suite of built-in tools.
 
-| Feature                    | The "Level Up" Factor                                                             |
-| :------------------------- | :-------------------------------------------------------------------------------- |
-| **⚔️ Quest Timer**         | Pomodoro-style clock that rewards you with XP. Level up as you master your focus. |
-| **📅 Mission Planner**     | Organize subjects and schedule study blocks like a tactical quest log.            |
-| **🎵 Integrated Jukebox**  | Built-in MP3 player to maintain "Flow State" without leaving the app.             |
-| **🏆 Global Leaderboards** | Compare your "Focus Power" with friends and stay motivated through competition.   |
-| **📊 Deep Analytics**      | Visual charts (via custom logic) to track your daily and weekly progress.         |
-| **🛡️ Local Fortress**      | 100% offline. Your data stays on your machine in a secure SQLite database.        |
+| Feature                      | Description                                                                                      |
+| :--------------------------- | :----------------------------------------------------------------------------------------------- |
+| **⚔️ Quest Timer**           | Pomodoro-style clock that rewards you with XP. Level up as you master your focus.                |
+| **📅 Mission Planner**       | Organize subjects and schedule study blocks like a tactical quest log.                           |
+| **🎵 Integrated Jukebox**    | Built-in MP3 player to maintain "Flow State" without leaving the app.                            |
+| **🏆 Global Leaderboards**   | Compare your "Focus Power" with friends and stay motivated through competition.                  |
+| **📊 Deep Analytics**        | Visual charts to track your daily and weekly progress with session history.                      |
+| **🛡️ 100% Offline**          | Your data stays on your machine in a secure local SQLite database. No cloud, no tracking.        |
+| **🎖️ Badges & Achievements** | Unlock exclusive badges as you hit streak milestones and XP goals.                               |
+| **🌙 Dark Mode UI**          | A sleek, custom dark-themed interface that is easy on the eyes during late-night grind sessions. |
 
 ---
 
-## 🏗️ System Architecture & File Structure
+## 🛠️ Project Architecture
 
-Here is exactly how the game engine (codebase) is structured. **This is for this, and that is for that:**
+We believe in clean code and separation of concerns.
 
-<details open>
-<summary><b>📂 Root Files (The Core)</b></summary>
-<br>
-
-- **`run.py`**: The ultimate entry point. Run this file to boot up the application.
-- **`run.spec`**: Configuration file used by PyInstaller if you want to build the app into a `.exe`.
-- **`settings.json`**: Saves local application configurations dynamically.
-- **`requirements.txt`**: The shopping list of Python packages required to run the project.
-- **`focus_studio.db`**: Your offline SQLite database where all user data, XP, and stats are securely stored.
-- **`PROJECT_REPORT.md`**: Formal academic documentation and write-up for the project.
-- **`.gitignore`**: Tells Git which files (like caches or databases) to ignore when pushing to GitHub.
-</details>
-
-<details open>
-<summary><b>🧠 <code>/logic</code> (The Brain Layer)</b></summary>
-<br>
-
-This folder contains background operations and math. It has zero graphical UI components.
-
-- **`auth.py`**: Handles user login, registration, and session security.
-- **`database.py`**: The engine for all SQLite CRUD (Create, Read, Update, Delete) operations.
-- **`badges.py`**: The mathematical logic behind calculating XP, leveling up, and unlocking achievements.
-- **`utils.py`**: A suite of helper functions (like time parsers or string formatters) used everywhere.
-</details>
-
-<details open>
-<summary><b>🎨 <code>/views</code> (The UI Layer)</b></summary>
-<br>
-
-This folder contains the actual Tkinter screens you interact with.
-
-- **`app.py`** & **`main.py`**: The main application controllers and window containers that route you between screens.
-- **`timer.py`**: The heart of the app-the gamified interactive Pomodoro clock interface.
-- **`analytics.py`**: Takes raw stats from the database and draws beautiful visual graphs for tracking.
-- **`music.py`**: The UI and background threading controller for the built-in MP3 player.
-- **`planner.py`**: The organizational UI for setting study blocks and quest logs.
-- **`social.py`**: Interface for adding friends and managing social features.
-- **`leaderboard.py`**: UI that ranks users based on their "Focus Power" and XP.
-- **`settings.py`**: The screen where users can tweak application preferences.
-</details>
-
-<details open>
-<summary><b>💄 <code>/styles</code> (The CSS Alternative)</b></summary>
-<br>
-
-- **`theme.py`**: The centralized styling manager. Instead of hardcoding hex colors everywhere, all visual assets, fonts, and dark mode colors are imported from here.
-</details>
+```text
+focus-studio/
+├── run.py               <- Entry point. Run this to launch the app.
+├── settings.json        <- Saves local user configuration dynamically.
+├── focus_studio.db      <- Offline SQLite DB — stores XP, sessions & user data.
+├── requirements.txt     <- All Python dependency packages.
+├── run.spec             <- PyInstaller build config for .exe packaging.
+├── PROJECT_REPORT.md    <- Formal academic write-up.
+│
+├── logic/               <- The Brain Layer (zero UI, pure logic)
+│   ├── auth.py          <- Login, registration, and session management.
+│   ├── database.py      <- SQLite CRUD operations engine.
+│   ├── badges.py        <- XP calculation, leveling, and badge unlocking logic.
+│   └── utils.py         <- Shared helper functions (parsers, formatters, etc.)
+│
+├── views/               <- The UI Layer (all Tkinter screens)
+│   ├── main.py          <- App controller and window routing hub.
+│   ├── timer.py         <- Gamified Pomodoro timer interface.
+│   ├── analytics.py     <- Visual analytics graphs and charts.
+│   ├── music.py         <- MP3 jukebox UI with background threading.
+│   ├── planner.py       <- Study block and mission planner UI.
+│   ├── social.py        <- Friends and social hub interface.
+│   ├── leaderboard.py   <- User rankings based on Focus Power.
+│   └── settings.py      <- App preference and settings screen.
+│
+├── styles/              <- The Styling Layer
+│   └── theme.py         <- Centralized: all hex colors, fonts, dark mode tokens.
+│
+└── assets/              <- Screenshots and image resources.
+```
 
 ---
 
-## 🛠️ Installation & Setup
+## 🎨 UI Color Palette
 
-Ready to start your first quest? Follow these steps to deploy Focus Studio.
+Clean and highly energetic design system - built for maximum focus with minimal eye strain.
 
-### 1. Requirements
+| Color Preview | Role                    | Hex Value |
+| :-----------: | :---------------------- | :-------: |
+|      ⚫       | Background              | `#0F0F1A` |
+|      🌑       | Cards / Panels          | `#1A1A2E` |
+|      🟣       | Accent Purple (Primary) | `#7C3AED` |
+|      🔵       | Accent Cyan (Secondary) | `#06B6D4` |
+|      🟢       | Success / Buy           | `#22C55E` |
+|      🔴       | Danger / Sell           | `#EF4444` |
+|      🟡       | XP / Gold Rewards       | `#FBBF24` |
+|      ⚪       | Text Primary            | `#F1F5F9` |
+|      🔘       | Text Secondary          | `#94A3B8` |
+
+---
+
+## 🚀 Installation & Setup
+
+### Prerequisites
 
 Ensure you have **Python 3.11 or higher** installed on your system.
 
-### 2. Quick Start
-
-Open your terminal, clone the repository, and run the following commands:
+### Quick Start
 
 ```bash
-# Clone the repository
+# 1. Clone the repository
 git clone https://github.com/yourusername/focus-studio.git
 cd focus-studio
 
-# Install dependencies
+# 2. Install all dependencies
 pip install -r requirements.txt
 
-# Launch the application
-python -m views.main
+# 3. Launch the application
+python run.py
 ```
+
+> **Note:** No internet connection is required after setup. The app runs 100% offline.
+
+---
+
+## 🔮 Future Improvements Roadmap
+
+We are constantly improving the system. Community PRs are welcome!
+
+- [ ] ☁️ Cloud sync for cross-device XP and progression
+- [ ] 🎨 Advanced visual themes and custom avatar unlockables
+- [ ] 👥 Multi-player party study rooms with real-time sync
+- [ ] 🌐 Web dashboard companion app for browser-based tracking
+- [ ] 🤖 AI-powered study habit recommendations
+- [ ] 🔔 Desktop notification support for break reminders
+- [ ] 📱 Mobile app version (Android / iOS)
 
 ---
 
 ## 💡 Why Focus Studio?
 
-Most study apps are clinical and boring. We built **Focus Studio** to bridge the gap between "needing to work" and "wanting to progress." By using local storage for privacy and a custom-styled UI for aesthetics, it provides a distraction-free environment where the hardest part of being a student-starting-becomes the most rewarding.
+Most study apps are **clinical and boring**. Focus Studio bridges the gap between _"needing to work"_ and _"wanting to progress."_
+
+- 🔒 **100% Private** - no accounts, no cloud, no data collection. Everything lives on your machine.
+- 🎮 **Gamified** - XP, levels, and leaderboards make grinding actually fun.
+- 🎨 **Beautiful UI** - a custom dark aesthetic designed to feel premium, not like a school tool.
+- ⚡ **Lightweight** - built with Python + Tkinter. No Electron bloat. Starts instantly.
 
 ---
 
 <div align="center">
 
-_Created by **Saurabh Gandhi** | **SY ECM 18** | WIT Solapur_
+_Built with ❤️ by **Saurabh Gandhi** | **SY ECM 18** | WIT Solapur_
 
 **[⬆ Back to Top](#-focus-studio)**
 
