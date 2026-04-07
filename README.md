@@ -138,7 +138,7 @@ Ensure you have **Python 3.11 or higher** installed on your system.
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/yourusername/focus-studio.git
+git clone https://github.com/saurabhkun/focus-studio.git
 cd focus-studio
 
 # 2. Install all dependencies
